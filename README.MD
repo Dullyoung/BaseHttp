@@ -4,6 +4,21 @@
 
 ### 如何使用？
 
+- 导入依赖
+  - project build.gradle中buildscript 和allprojects的repositories中加入  
+   ```groovy
+        maven { url "https://jitpack.io" }
+   ```
+  - app 的build.gradle下加入ok3 和kotlin环境以及gson和本库依赖
+  ```groovy
+        implementation 'androidx.core:core-ktx:1.5.0'
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.31"
+        implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
+        implementation 'com.google.code.gson:gson:2.8.7'
+        implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+        implementation 'com.github.dullyoung:basehttp:test1'
+  ```
+
 - 新建业务请求类继承BaseEngine 如：
 
   ``` kotlin

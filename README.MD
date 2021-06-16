@@ -16,7 +16,7 @@
         implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
         implementation 'com.google.code.gson:gson:2.8.7'
         implementation 'com.squareup.okhttp3:okhttp:4.9.0'
-        implementation 'com.github.dullyoung:basehttp:test1'
+        implementation 'com.github.dullyoung:basehttp:1.0'
   ```
 
 - 新建业务请求类继承BaseEngine 如：
